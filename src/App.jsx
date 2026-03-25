@@ -1,31 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react';
-import { 
-  getFirestore, 
-  collection, 
-  onSnapshot, 
-  deleteDoc, 
-  doc,
-  query,
-  enableIndexedDbPersistence
-} from 'firebase/firestore';
-import { 
-  getAuth, 
-  signInAnonymously, 
-  onAuthStateChanged 
-} from 'firebase/auth';
-import { 
-  LayoutDashboard, 
-  Clock, 
-  Trash2, 
-  Calendar, 
-  User, 
-  ShieldCheck,
-  Search,
-  RefreshCw,
-  AlertCircle,
-  WifiOff,
-  DatabaseZap
-} from 'lucide-react';
+import { getFirestore, collection, onSnapshot, deleteDoc, doc,query,enableIndexedDbPersistence} from 'firebase/firestore';
+import { getAuth, signInAnonymously, onAuthStateChanged } from 'firebase/auth';
+import { LayoutDashboard, Clock, Trash2, Calendar, ShieldCheck,Search,RefreshCw,AlertCircle, WifiOff, DatabaseZap} from 'lucide-react';
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
