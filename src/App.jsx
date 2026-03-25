@@ -16,13 +16,12 @@ const firebaseConfig = {
   storageBucket: "schedule-8feb6.firebasestorage.app",
   messagingSenderId: "85118501498",
   appId: "1:85118501498:web:8e3f1fa68535963736f1c3",
-  measurementId: "G-N44W6136MD"
 };
 
 // Initialize Services
-const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const auth = getAuth(app);
+const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
 // SPEED FIX: Enable Local Persistence (Caching)
